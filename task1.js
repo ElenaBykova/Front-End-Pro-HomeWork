@@ -1,0 +1,31 @@
+const first_name = 'Elena';
+const last_name = 'Bykova';
+let my_country = 'Ukraine';
+let my_city = 'Dnepr';
+let my_age = 40;
+const sex = 'female';
+const children = '2';
+let two_sons = true;
+let have_brother = false;
+let dream_travel = 'Portugal';
+let favorite_singer = 'Sting';
+const like_rain = true;
+let course_hillel = 'Front End Pro'
+const date_next_lesson = 30;
+const home_work_done = true;
+
+console.log(first_name, typeof first_name);
+console.log(last_name, typeof last_name);
+console.log(my_country, typeof my_country);
+console.log(my_city, typeof my_city);
+console.log(my_age, typeof my_age);
+console.log(sex, typeof sex);
+console.log(children, typeof children);
+console.log(two_sons, typeof two_sons);
+console.log(have_brother, typeof have_brother);
+console.log(dream_travel,typeof dream_travel);
+console.log(favorite_singer, typeof favorite_singer);
+console.log(like_rain, typeof like_rain);
+console.log(course_hillel, typeof course_hillel);
+console.log(date_next_lesson, typeof date_next_lesson);
+console.log(home_work_done, typeof home_work_done);
