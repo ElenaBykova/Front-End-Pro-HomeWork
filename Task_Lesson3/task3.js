@@ -8,15 +8,15 @@ do {
 } while (i <= n);
 
 //Часть 2. Два условия завязала во вложенные циклы While вложен в For
-let V = 5;
-let j = -1;
-for (let v = 0; v < 3; v--) {
-  while (j <= 2) {
-    console.log(`v: ${v}, j: ${j}`);
-    j++;
-  };   
- console.log(`v: ${v}, V: ${V > v}`);
-};
+//let V = 5;
+//let j = -1;
+//for (let v = 0; v < 3; v--) {
+  //while (j <= 2) {
+    //console.log(`v: ${v}, j: ${j}`);
+    //j++;
+  //};   
+ //console.log(`v: ${v}, V: ${V > v}`);
+//};
 
 //Часть 3. (Блок, который выводит End) Два условия завязала во вложенные циклы While вложен в While
 let k = 0;
