@@ -1,6 +1,6 @@
 
 function f(n) {
-  if(n === 0) {
+  if(n === 1) {
     return n;
   }
   return n + f(--n);
