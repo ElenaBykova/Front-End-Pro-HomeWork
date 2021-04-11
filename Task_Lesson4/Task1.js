@@ -1,7 +1,7 @@
 
 function getTemp(temp = 'no value', unit = 'no value') {
   var temp = 0;
-  var unit = '0';
+  var unit = 'f';
   console.log(`Unit:${unit}, Temp:${temp}`);
     switch (unit) {
       case 'f':
