@@ -1,43 +1,53 @@
 
 function getTemp(temp = 'no value', unit = 'no value') {
+  var temp = 20;
+  var unit = 'f';
   console.log(`Unit:${unit}, Temp:${temp}`);
     switch (unit) {
       case 'f':
         F = temp;
-        K = calcKifForC(temp);
-        C = calcCifF(temp);
+        K = convertFahrenheitAndCelsiusToKelvin(temp);
+        C = convertFahrenheitToCelsius(temp);
         break;
-          case 'k':
-            K = temp;
-            C = calcCifK(temp);
-            F = calcFifKorC(temp);
-            break;
-              case 'c':
-                C = temp;
-                K = calcKifForC(temp);
-                F = calcFifKorC(temp);
-                break;
+      case 'k':
+        K = temp;
+        C = convertKelvinToCelsius(temp);
+        F = convertKelvinToFahrenheit(temp);
+        break;
+      case 'c':
+        C = temp;
+        K = convertCelsiusToKelvin(temp);
+        F = convertCelsiusToFahrenheit(temp);
+        break;
       default:
-      break;
+      console.log('The value is incorrect!');
     };
 
   console.log(`'F' = ${F},  'K' = ${K}, 'C' = ${C}`);
 };
 
-getTemp(0, 'c');
+getTemp();
 
-function calcCifF(temp) {
+function convertFahrenheitToCelsius(temp) {
   return (temp - 32) * 5/9;  
 };
 
-function calcKifForC(temp) {
-  return temp + 273.15;
+function convertFahrenheitAndCelsiusToKelvin(temp) {
+  return (temp - 32) * 5/9 + 273.15;
 };
 
-function calcFifKorC(temp) {
+function convertKelvinToFahrenheit(temp) {
+  return (temp - 273.15) * 9/5 + 32;
+};
+
+function convertKelvinToCelsius(temp) {
+  return temp - 273.15;
+};
+
+function convertCelsiusToFahrenheit(temp) {
   return (temp * 9/5) + 32;
 };
 
-function calcCifK(temp) {
-  return temp - 273.15;
+function convertCelsiusToKelvin(temp) {
+  return temp + 273.15;
 };

@@ -1,10 +1,10 @@
 
 function f(n) {
-  if(n === 1) {
+  if(n === 2) {
     return n;
   }
-  return n * f(n - 1);
+  return n + f(--n);
 };
 
-let functionRecursion = f(9);
-console.log('Recursion =', functionRecursion); // 9! = 362880
+let functionRecursion = f(10);
+console.log('Recursion =', functionRecursion); // 10! = 54
