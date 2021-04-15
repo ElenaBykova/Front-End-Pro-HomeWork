@@ -1,18 +1,7 @@
-function log(_element, _index) {
-  console.log(_index, _element);
-}
 
-function isDevidedBy10Function(_element, _index) {
-  return _element % 10 === 0;
-  
-}
 
 let arr2 = [0, 1, 2, 3, 4, 5, 36, 45, 500, 956, 450, 600, 760, 125, 259, 650, 634, 281, 50, 640, 52, 297, 346, 300, 24];
 
-arr2.forEach(log); //для каждого выводим 
-
-let isDevidedBy10 = arr2.every    //проверяем деление (isDevidedBy10Function);
-console.log ('isDevidedBy10', isDevidedBy10);
 
 // Часть 1
 //Четных чисел и кратных 10
