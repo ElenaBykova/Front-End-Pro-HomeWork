@@ -1,23 +1,20 @@
 
 //Задача 1.
-function arrArray() {
-      n = 500;
-      arr = new Array(n)
-      for (var i = 0; i <= n; i++) {
+function arrArray(n) {
+      let arr = [];
+      for ( i = 0; i <= n; i++) {
           arr.push(i);
-      }
+      };
       return arr;
-  }
-arr = arrArray(10);
+  };
+arr = arrArray(1000);
 console.log(arr);
 
 
 // Задача 2
 //Четных чисел и кратных 10
 let Arr2Devided10 = arr.filter((_element) => {
-      if (_element % 2 === 0) {
-        return _element % 10 === 0;
-      }
+        return _element % 2 === 0 && _element % 10 === 0;
     });
     
     console.log('Arr2Devided10', Arr2Devided10);
