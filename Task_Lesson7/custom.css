@@ -1,0 +1,32 @@
+li {
+  list-style: none;
+  padding: 2px 5px 2px 5px;
+  margin-top: 5px;
+  border: 2px solid lightblue;
+  background-color: aliceblue;
+  border-radius: 3px;
+  width: fit-content;
+};
+
+#textbox {
+  border-radius: 3px;
+  border: 2px solid lightslategray;
+};
+
+#button {
+  border-radius: 3px;
+  border: 2px solid lightslategray;
+  background-color: lightslategray;
+  width: 60px;
+  text-shadow: 0 0 black;
+};
+
+div {
+  height: 400px;
+  width: 300px;
+  margin: 10px 5px;
+  padding: 5px 0;
+  background-color: cadetblue;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px grey;
+};

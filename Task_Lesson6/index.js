@@ -3,7 +3,7 @@ function story() {
   let kolobok = {
     name: 'kolobok',
     age: 17,
-    'who is': 'talking pie',
+    sex: 'talking pie',
     state: 'alive',
     character: 'cheeky',
     home: 'with grandMa & grandFa',
@@ -18,7 +18,7 @@ function story() {
   let grandMa = {
     name: 'grandMa',
     age: 75,
-    'who is': 'woman',
+    sex: 'woman',
     state: 'alive',
     character: 'grandmotherly',
     home: 'house in the village',
@@ -33,7 +33,7 @@ function story() {
   let grandFa = {
     name: 'grandFa',
     age: 83,
-    'who is': 'man',
+    sex: 'man',
     state: 'alive',
     character: 'kindly',
     home: 'house in the village',
@@ -48,7 +48,7 @@ function story() {
   let rabit = {
     name: 'rabit',
     age: 25,
-    'who is': 'animal',
+    sex: 'animal',
     state: 'alive',
     character: 'fun',
     home: 'glade',
@@ -63,7 +63,7 @@ function story() {
   let bear = {
     name: 'bear',
     age: 46,
-    'who is': 'animal',
+    sex: 'animal',
     state: 'alive',
     character: 'hard',
     home: 'forest',
@@ -78,7 +78,7 @@ function story() {
   let fox = {
     name: 'fox',
     age: 35,
-    'who is': 'animal',
+    sex: 'animal',
     state: 'alive',
     character: 'crafty',
     home: 'forest',
@@ -122,7 +122,7 @@ function chapter1(kolobok, grandFa, grandMa) {
   kolobok.home = 'v begax';
 };
 
-function chapter2(kolobok, rabit, grandFa, grandMa) {
+function chapter2(kolobok, rabit) {
   console.log(kolobok);
   console.log(rabit);
   kolobok.act(`${kolobok.name}: 'radostno kotitsia po polianke'`);
@@ -147,7 +147,7 @@ function chapter2(kolobok, rabit, grandFa, grandMa) {
   rabit.state = 'alive no v neponiatkax';
 };
 
-function chapter3(kolobok, bear, rabit, grandFa, grandMa) {
+function chapter3(kolobok, bear) {
   console.log(kolobok)
   console.log(bear);
   kolobok.act(`${kolobok.name}: 'podkatyvaet k lesy i ostanavlivaetsia'`);
@@ -168,13 +168,13 @@ function chapter3(kolobok, bear, rabit, grandFa, grandMa) {
   console.log(`mysli v golove ${kolobok.name}: "${kolobok.thing}", - but ${kolobok.face}`);
   kolobok.say(`${kolobok.name}: "Xa! I ot GrandFa ybezhal,  ot GrandMa ybezhal! I ot tebia ${bear.name} ykachy!"`);
   bear.state = 'nedoymevaet';
-  kolobok.act(`${kolobok.name}: kiss ${bear.name} v schechky i poka ${bear.name} ${bear.state}, ykatyvaet po bystromy!'`);
+  kolobok.act(`${kolobok.name}: kiss ${bear.name} v schechky i poka ${bear.name} ${bear.state}, ykatyvaet po bystromy!`);
   delete kolobok.face
   kolobok.state = 'chydom yshel ot bear';
   delete kolobok.thing
 };
 
-function chapter4(kolobok, fox, bear, grandFa, grandMa) {
+function chapter4(kolobok, fox) {
   console.log(kolobok)
   console.log(fox);
   kolobok.act(`${kolobok.name}: 'vkatyvaetsia v gystoi i dark forest'`);
